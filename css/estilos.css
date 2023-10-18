@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
+    font-family: "lineage";
+    src: url(../font/49_la2font.ttf);
+}
+
+
+body{
+    background-color: rgb(230, 168, 88);
+    margin-left: 20% ;
+    margin-right: 20%;
+    box-shadow: 15px 0 10px -5px #353535, -15px 0 10px -5px #353535;
+
+}
+
+
+
+/* Lista de navegación */
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header nav div ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* imagen de cabecera  */
+.div_l2jlormor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.l2jlormor{
+    font-family: "lineage";
+    font-size: 100px;
+    margin: 50px;
+}
+
+/* etc */
+.hola{
+    height: 80vh;
+}
+
+.color_rojo{
+    color: red;
+}
+.color_azul{
+    color: blue;
+}
+.color_verde{
+    color: green;
+}
+.color_celeste{
+    color: aquamarine;
+}
+.color_violeta{
+    color: purple;
+}
+.color_gris{
+    color: grey;
+}
+
+
+/* /////////////////Elemento /////////////////// */
+
+.columna_backgroudn{
+
+    background-color: rgb(182, 133, 70);
+}
