@@ -5,7 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 @font-face {
@@ -43,7 +43,6 @@ a{
 
 
 
-
 /* imagen de cabecera  */
 .div_l2jlormor{
     display: flex;
@@ -74,7 +73,29 @@ footer{
     align-items: center;
     font-size: 2rem;
 }
+.div_titulo{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_texto{
+    margin: 30px 20% 20px 20%;
+    p{
+        font-size: 20px;
+    }
 
+}
+.div_contenido_total{
+    background-color: rgb(182, 133, 70);
+    padding: 5px 0 10px 0;
+}
+.img_en_texto{
+    width: 40px;
+    height: 40px;
+
+}
 
 /* /////////////////Elemento /////////////////// */
 
@@ -193,9 +214,54 @@ table{
     justify-content: center;
 }
 
-
-
 /* /////////////////////////////// */
+
+/* Laboratorio de Zorak */
+
+.img_zorak{
+    width: 160px;
+    height:120px;
+}
+#zorakbeza{
+    position: absolute;
+    
+}
+.div_zorakdialogo{
+
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 20px;
+    p{
+        margin-left: 20px;
+        font-size: 30px;
+        color: white;
+        
+    }
+}
+.div_burbuja_dialogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    gap: 10px;
+}
+/* *********************************************** */
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1290px){
 
     body{

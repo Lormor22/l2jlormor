@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>L2jLormor</title>
 </head>
 <body>
@@ -43,9 +44,359 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <h1></h1>
+        <div class="div_titulo">
+            <h1>Laboratorio de Zorak <img id="zorakbeza" src="../img/personajes_under/zorak1.png" alt="Cara zorak" width="70px" height="50px"></h1>
+        </div>
+        <div class="div_armas_vesper">
+            <ul id="armas_vesper">
+                <li><a href="#Critical_Rate" title="Critical rate"><img src="../img/skills/focus.png" alt="Critical_Rate"></a></li>
+                <li><a href="#Erase" title="Chances de Erase"><img src="../img/skills/erase.png" alt="Erase"></a></li>
+                <li><a href="#Clarity" title="Consumo de skilles"><img src="../img/skills/clarity.png" alt="Clarity"></a></li>
+                <li><a href="#Disarm" title="El disarm y el STR"><img src="../img/skills/disarm.png" alt="Disarm"></a></li>
+                <li><a href="#Shiel_block" title="Shield block"><img src="../img/skills/shield_defense.png" alt="Shiel_block"></a></li>
+                <li><a href="#Mana_burn" title="Mana burn"><img src="../img/skills/manaburn.png" alt="Mana_burn"></a></li>
+                <li><a href="#Kamael_souls" title="Kamael Souls"><img src="../img/skills/Soul_kamael.png" alt="Kamael_souls"></a></li>
+                <li><a href="#Summons" title="Summons y elemento"><img src="../img/skills/summon.png" alt="Summons"></a></li>
+                <li><a href="#Random_damage" title="Random damage"><img src="../img/skills/weapon mastery.png" alt="Random_damage"></a></li>
+                <li><a href="#Cancel" title="Cancel"><img src="../img/skills/cancel.png" alt="Cancel"></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div id="Critical_Rate" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Critical Rate </p>
+                    <img class="img_en_texto" src="../img/skills/focus.png" alt="focus icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> - Si bien el Critical Rate máximo es 500 (50.0%), es posible llegar a 97% usando el buff de daguero Focus Chance y pegando por la espalda. El bonus de 60-95%* al "critical rate por la espalda" ignora el límite de 500, haciendo que todos los golpes sean critical hits.
+                    <br>*Aclaración: Estando +15.
+                <br><br>
+                    - Chance de crítico de Backstab es mayor mientras más DEX tiene el personaje.
+                    <br>Backstab SI puede entrar por el frente (1%) y por el costado (5%). Por la espalda es 100%, no puede fallar.
+                <br><br>
+                    - Chance de crítico de cualquier otro skill físico (ejemplos: Double Shot, Sonic Buster, etc) es mayor mientras más STR tiene el personaje (de hecho la influencia de STR en esto es enorme - en un personaje hipotético con 99 STR, la chance de crítico es 100%).</p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="Erase" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Erase</p>
+                    <img class="img_en_texto" src="../img/skills/erase.png" alt="erase icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p>Elder self-buff usando 500 veces Erase contra un summon de 3ra +15: <br>
+                    <br>
+                    - Erase +0: 0% chance <br>
+                    - Erase +10: 36% chance <br>
+                    - Erase +20: 45% chance <br>
+                    - Erase +30: 45% chance <br>
+                    - Erase +30 + Antharas, B.Zaken y Beleth, y el summon con mental shield: 59% chance<br>
+                    - Erase +30 + Antharas, B. Zaken y Beleth, y el summon sin mental shield: 100% chance<br></p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="Clarity" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Consumo de MP de skilles </p>
+                    <img class="img_en_texto" src="../img/skills/clarity.png" alt="erase icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> 
+                    Los skilles Mágicos tienen su consumo de MP dividido en dos partes: <br><br>
+
+                    Parte 1- 20% del consumo total, que paga cuando se empieza a castear el skill. <br><br>
+
+                    Parte 2 - 80% del consumo total, que pagan cuando el mismo termina de castear. <br>
+                    El consumo de MP de la parte 1 no puede ser reducido con nada, es decir, por ejemplo, con ningún tipo de Clarity, y necesitan tenerlo siempre, aun si tienen Maximum clarity, Maximum Ability, o similares. <br> <br>
+
+                    Todos los skills mágicos tienen esa funcionalidad; con parte 1 y parte 2 del consumo. Por lo que aquello que les reduzca o incremente el consumo de MP se computa siempre según la parte 2. <br><br>
+                    En cuanto a los skilles físicos, generalmente no tienen parte 1, en la gran mayoría se computa todo el número, porque gasta el MP al final del casteo. <br><br>
+                    Hay excepciones como el rush impact, cuya totalidad del mana está en la parte 1 (porque el MP se consume cuando empieza a rushear y no cuando llega a destino), por lo que, al no tener parte 2, ningún tipo de clarity lo afecta. Es decir, si por ejemplo tienen un clarity +30, el rush impact va a seguir consumiendo la misma cantidad.
+
+
+                </p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="Disarm" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Disarm </p>
+                    <img class="img_en_texto" src="../img/skills/disarm.png" alt="erase icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> - La STR del rushero no influye en nada a la chance de Disarm. <br>
+                    - La STR de su target si influye en la chance de Disarm. Un personaje con 1 STR tendría 90% (cap de H5) chance de que le entre Disarm. Un personaje con 99 STR tendría 10% (cap de H5) chance de que le entre Disarm.</p>
+            </div>
+        </div>
+
+        <hr>
+        <div id="Shiel_block" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Funcionamiento del Shield Block </p>
+                    <img class="img_en_texto" src="../img/skills/shield_defense.png" alt="erase icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                    <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/buchiface.png" alt="">
+                <p>¿Por qué si mi escudo dice que tiene 321 de P.def pero no aumenta mi defensa?</p>
+                </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/zorak1.png" alt="">
+                    <p>Todos los escudos tienen una chance de bloquear ataques. Esta chance, de base es 20%, pero es modificada por varios factores (como el stat DEX, pasivas, sets, buffs, etc). Cuando la chance se activa y bloqueás un ataque, dicho ataque te va a hacer menos daño: para ESE golpe bloqueado en particular, la defensa de ese escudo se agrega a la de tu personaje. <br>
+                    Existe también una chance, bastante menor, de que ocurra un "Perfect Shield Block", el cual bloquea un ataque por completo. <br>
+                    La Shield Defense funciona tanto para golpes fisicos como contra nukes magicos
+                    </p>
+                </div>
+                
+            </div>
+            <hr style=" margin: 0 20% 0 20%;">
+
+            <div class="div_texto">
+                <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                    <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/buchiface.png" alt="">
+                <p> Hice un test con el daguero de un amigo, me pegó por la espalda pero mi escuido no bloqueo el daño</p>
+                </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/zorak1.png" alt="">
+                    <p>Por default, el escudo sólo puede bloquear los ataques que tu personaje recibe desde el frente. Sin embargo, algunas clases (como los Paladines) pueden aprender Aegis Stance, toggle que les permite bloquear ataques inminentes desde cualquier dirección mientras está activado. Otras clases, como Temple/Shillien Knight, pueden inclusive aprender la pasiva Aegis, que proporciona este efecto de manera permanente.
+                    </p>
+                </div>
+                
+            </div>
+            <hr style=" margin: 0 20% 0 20%;">
+            <div class="div_texto">
+                <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                    <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/buchiface.png" alt="">
+                <p> Mi chance de bloqueo es muy baja,y cuando se activa no bloquea casi nada de daño ¿Cómo puedo mejorarlo?</p>
+                </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/zorak1.png" alt="">
+                    <p>Hay pasivas, sets y buffs que aumentan el efecto de los escudos. Buffs como Bless Shield aumentan la chance de que el bloqueo se active, mientras que buffs como Advanced Block aumentan la cantidad de daño bloqueada por el mismo.
+                    </p>
+                </div>
+                
+            </div>
+
+            <hr style=" margin: 0 20% 0 20%;">
+            <div class="div_texto">
+                <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                    <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/buchiface.png" alt="">
+                <p> ¿El escudo sólamente bloquea ataques físicos?</p>
+                </div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <img style="width: 40px; height: 40px; background-color: black; padding: 5px; border-radius: 50%;" src="../img/personajes_under/zorak1.png" alt="">
+                    <p>No, también bloquea algunos ataques mágicos. Hay algunos nukes que son susceptibles a ser bloqueados por escudo también. Los más importantes entre dichos nukes son: Death Spike, Prominence, Hurricane e Ice Dagger.
+                        <br>
+                        <br>
+                        Otros nukes que también pueden ser bloqueados por escudo son: Wind Strike, Blaze, Aqua Swirl, Twister y Vale Master Burning Flame.
+                        <br>
+                        <br>
+                        Así que sí, como verán, los Spellsingers son los únicos nukers cuyo skill principal (Hydro Blast) no puede ser bloqueado por escudo.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div id="Mana_burn" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Mana Burn </p>
+                    <img class="img_en_texto" src="../img/skills/manaburn.png" alt="Wild Magic icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> Atributos que aumentan la efectividad del mana burn: <br>
+                    <br>
+
+                    -M.Atk <br>
+                    -Enchant +Power <br>
+                    -Tener bonus al PvP Damage (SA, {PvP}, belt con pvp skill attack)
+                </p>
+                </div>
+        </div>
+        <hr>
+        <div id="Kamael_souls" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Kamael Souls </p>
+                    <img class="img_en_texto" src="../img/skills/Soul_kamael.png" alt="Wild Magic icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> Los Kamael tienen una mecánica única de su clase, que les permite recolectar armas de enemigos matados, o   usando skills e items para obtenerlas. Las mismas cumplen una única función: aumentar el daño de sus skills. <br><br>
+
+                    Cada vez que se utiliza un skill de kamael, el mismo va a consumir hasta 5 souls, utilizándolas para incrementar su daño. <br><br>
+
+                    <b>[Skills físicos de Kamael]</b> <br>
+                    0 souls = Daño base <br>
+                    1 souls = +5% daño <br>
+                    2 souls = +10% daño <br>
+                    3 souls = +14% daño <br>
+                    4 souls = +19% daño <br>
+                    5 souls = +23% daño <br>
+                    <br>
+                    <b>[Skills mágicos de Kamael]</b> <br>
+                    0 souls = Daño base <br>
+                    1 souls = +2% daño <br>
+                    2 souls = +5% daño <br>
+                    3 souls = +7% daño <br>
+                    4 souls = +9% daño <br>
+                    5 souls = +11% daño <br>
+
+                    </p>
+                </div>
+        </div>
+        <hr>
+        <div id="Summons" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Summons </p>
+                    <img class="img_en_texto" src="../img/skills/summon.png" alt="Wild Magic icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> <b>¿Cómo interactúa el elemento con los summons?</b><br>
+                    Las 3 clases principales de summoners tienen mecánicas especiales con el sistema de elemento. Repasamos un par de detalles ahora. <br>
+                    <br>
+                    <b>Daño</b><br>
+                    <br>
+                    Al realizar daño, el mismo calcula que de la totalidad de elemento de ataque que tiene tu personaje, se va a repartir 20% para el summoner y 80% para el summon. Ejemplo: Phantom Summoner con un arma 150, va a mantener 30 elemento para sí mismo y 120 elemento para su summon. <br><br>
+
+                    El elemento en los summons afecta principalmente a sus ataques básicos, y pueden tener cualquier tipo de elemento. Los skills de summons que no tienen ningún elemento asociado, no se van a ver afectados por ningún elemento (como el Slash del Feline King). Otros skills de summon que sí tienen elementos asociados (como Tidal Wave de Magnus, elemento Water) van a ser beneficiados sólo si el summoner está usando un arma con dicho elemento. <br><br>
+
+                    Ejemplo: Un elemental master con un arma 150 Fire - su Magnus atacará con golpes basicos usando 130 Fire, pero su Tidal Wave continuará teniendo los 20 Water de base del skill. Si el elemental master se equipa un arma 150 Water, su Magnus atacará con golpes básicos usando 130 Water, y Tidal Wave tendrá 150 (130+20) porque coinciden ambos tipos. <br><br>
+
+                    <b>Defensa</b> <br><br>
+                    Los summons no reciben nada de la defensa elemental de su dueño. Por el contrario, reciben resistencia elemental pasiva hacia todos los 6 tipos de atributo a medida que son enchanteados. <br><br>
+
+                    Summons de 2da profesión: Comienzan con 20 resist a todos los elementos en +0, terminan con 147 en +30. <br>
+                    Summons de 3ra profesión: Comienzan con 100 resist a todos los elementos en +0, terminan con 250 en +15. <br><br>
+
+                    <b>Aclaraciones adicionales</b><br><br>
+                    
+                    -Las mecánicas aquí mencionadas sólo cuentan para las tres clases de summoners puros (WL, ES, PS). Otras clases que también tienen summons (Necro, crafter, paladin) no se ven afectadas por las mismas. <br>
+                    -Ninguna de estas mecánicas aplica para pets (lobos, etc).
+                    </p>
+                </div>
+        </div>
+        <hr>
+        <div id="Random_damage" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Random Damage </p>
+                    <img class="img_en_texto" src="../img/skills/weapon mastery.png" alt="Wild Magic icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> <b>¿Qué es el Random Damage?</b><br><br>
+                    A la hora de realizar daño a un oponente, habrán notado que el número final nunca es fijo, siempre tiene un componente aleatorio, al azar. La única excepción a esto son los skills de tipo Energy (como los del gladi - que bajo las mismas condiciones siempre van a causar el mismo exacto daño). <br><br>
+
+                    Para todo lo demás, el daño nunca es fijo. Esto sucede porque a la hora de calcular el daño final, se agrega un componente random, el cual está determinado por el tipo de arma. <br><br>
+
+                    ¿Qué significa esto? Que, depende del tipo de arma que usen, el rango aleatorio de daño causado será mayor, o menor. <br><br>
+
+                    Por ejemplo, las espadas (sin importar si son de 1 mano o 2, o si son de warrior o mago), tienen un valor de random damage de 10%. Esto significa que si un spellsinger, por poner un ejemplo, estuviese a punto de causar 1000 de daño con su Vesper Buster, el daño final oscilaría entre 900 y 1100. <br><br>
+
+                    Para poner otro ejemplo, los blunt (de nuevo, sin importar si son de 1 mano o 2, o si son de warrior o mago), tienen un valor de random damage de 20%. Esto significa, siguiendo el ejemplo de arriba, que si el spellsinger estuviese a punto de causar esos mismos 1000 de daño, pero con una Vesper Caster, el daño final oscilaría entre 800 y 1200. <br><br>
+
+                    Como conclusión, si bien el cálculo de daño con ambas armas sería el mismo, usando una Vesper Caster (blunt) existe la chance de pegar más - pero también de pegar menos; mientras que usando una Vesper Buster (sword), el daño es menos variable. <br><br>    
+
+                    <b>¿Cuánto valor de random damage tiene cada arma del juego?</b> <br><br>
+
+                    Fists - 5% <br>
+                    Dagger - 5% <br>
+                    Bow - 5% <br>
+                    Crossbow - 10% <br>
+                    Pole - 10% <br>
+                    Sword - 10% <br>
+                    Dual Sword - 10% <br>
+                    Dual Dagger - 10% <br>
+                    Ancient Sword - 15% <br>
+                    Blunt = 20% <br>
+                    Rapier = 40% <br>
+
+                    </p>
+                </div>
+        </div>
+
+
+        <hr>
+        <div id="Cancel" class="div_contenido_total">
+            <div class="div_zorakdialogo">
+                <div>
+                    <img class="img_zorak" src="../img/personajes_under/zorak1.png" alt="cabeza Zorak">
+                </div>
+                <div class="div_burbuja_dialogo">
+                    <p>Cancel</p>
+                    <img class="img_en_texto" src="../img/skills/cancel.png" alt="erase icon">
+                </div>
+            </div>
+            <div class="div_texto">
+                <p> 
+                    Cada buff en particular tiene su propia resistencia al cancel, que está primariamente basada en el magic level de dicho buff (Al enchantear el buff, su nivel sube, EJ: Bless the Body +25 cost es lvl 83 y +0 su nivel es 74).
+                    Ell cancel tiene dos factores: su magic level, y su chance base. La chance base del cancel de la pole de hecho es 10, mientras que el skill cancellation es 25, pero la diferencia está en que el cancel de la pole de hero tiene magic level 85, y cancellation se queda en 74 porque no es enchanteable. <br> <br>
+                    Cuando uno por ejemplo "aumentas tu resistencia a cancel en 100%" no significa que te hace inmune, significa que es un x2 a la base. Entonces, si tu chant of movement +0 tiene un 5% resistencia a cancel, con un +100% pasa a ser 10%. Por eso los números de las resist cancel son o suelen ser tan grandes, como +80%, +100%. <br><br>
+
+                    No importa cuantas resistencias (o penalidades) hacia cancel tenga uno, es imposible tener menos de 10% chance o más de 70% chance de cancel. Entonces por más que uno utilice la mayor cantidad de buffs, pasivas, talismanes con resistencia a cancel y tengas todos tus buff +30, como mínimo se tiene un 10% de chance que puedas ser cancelado. <br><br>
+
+                    Desde Gracia Final en adelante, cancel tiene una chance individual por cada buff que puede remover, en cambio en interlude, el cancel es tan fuerte que si se activaba la chance, te removía inmediatamente ese número de buffs (Por eso la pole hero es una de las armas más importantes), en HighFive sí cancel tiene chance de removerte un máximo de 5 buffs, tiene una chance individual por cada intento (1,2,3,4,5), que como dicho anteriormente, no puede ser ni menor a 10 ni mayor a 70. 
+                </p>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -63,7 +414,8 @@
 
 
 
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/mijs.js"></script>
+    
 </body>
 </html>
