@@ -43,7 +43,7 @@ a{
 
 
 
-/* imagen de cabecera  */
+/* L2jlormor de cabecera  */
 .div_l2jlormor{
     display: flex;
     justify-content: center;
@@ -94,9 +94,59 @@ footer{
 .img_en_texto{
     width: 40px;
     height: 40px;
-
 }
+.cabecera_dv{
+    background-image: url(../img/img_cabecera/dragon_valley.jpg);
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_7rb{
+    background-image: url(../img/img_cabecera/portal_7rb.png);
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_7s_1{
+    background-image: url(../img/img_cabecera/anakim_lilith.png);
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_7s_2{
+    background-image: url(../img/img_cabecera/guardias.png);
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_olys{
+    background-image: url(../img/img_cabecera/olys.png);
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.div_img_centrada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div_img_cover{
+    width: 100%;
+}
+.sangria{
+    margin-left: 5%;
+}
+.columna_con_icono{
 
+    display: flex;  
+    justify-content: flex-start; 
+    align-items: center;
+}
 /* /////////////////Elemento /////////////////// */
 
 .columna_backgroudn{
