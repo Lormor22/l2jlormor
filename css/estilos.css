@@ -72,6 +72,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    text-align: center;
 }
 .div_titulo{
     margin-top: 100px;
@@ -129,6 +130,20 @@ footer{
     /* background-attachment: fixed; */
     padding: 150px;
     box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_tips{
+    background-image: url(../img/img_cabecera/tips.png);
+    background-size: cover; 
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+
+}
+.cabecera_tw{
+    background-image: url(../img/img_cabecera/tw.webp);
+    background-size: cover; 
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+
 }
 .div_img_centrada{
     display: flex;
@@ -259,10 +274,7 @@ table{
     justify-content: center;
     margin-bottom: 10px;
 }
-.h1_sa{
-    display: flex;
-    justify-content: center;
-}
+
 
 /* /////////////////////////////// */
 
