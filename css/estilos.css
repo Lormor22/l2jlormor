@@ -48,6 +48,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .l2jlormor{
     font-family: "lineage";
