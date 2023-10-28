@@ -144,7 +144,24 @@ footer{
     background-size: cover; 
     padding: 150px;
     box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
-
+}
+.cabecera_lucky{
+    background-image: url(../img/img_cabecera/lucky_cerdos.png);
+    background-size: cover; 
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_recipes{
+    background-image: url(../img/img_cabecera/recipes.png);
+    background-size: cover; 
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
+}
+.cabecera_enchant{
+    background-image: url(../img/img_cabecera/enchant.png);
+    background-size: cover; 
+    padding: 150px;
+    box-shadow: 0px 0 20px 0px #353535, -15px 0 10px -5px #353535;
 }
 .div_img_centrada{
     display: flex;
