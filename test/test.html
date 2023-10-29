@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="text-align: center;" >
+        <tr class="columna_backgroudn">
+            <th> Rune name </th>
+            <th>Common effects ( lvl 1 - lvl 13 )</th>
+            <th>Super effects ( lvl 8 - lvl 13 )</th>
+        </tr>
+        <tr>
+            <td>
+                
+                <img src="../img/clasic/othel_lv1.png" alt="othel 1">
+                Othell's Rune
+                <select id="seleccion_othel" onchange="othell_rune()">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+
+                    
+                </select>
+            </td>
+            <td >
+                <div id="othel_resultado" style="margin: 3px;">
+                    75 P.Critical rate
+                </div>
+                <hr>
+                <div id="othel_resultado2" style="margin: 3px;">
+                    80 P.Critical rate
+                </div>
+            </td>
+            <td >
+                <div id="othel_resultado3" style="margin: 3px;">
+                    -
+                </div>
+                <hr>
+                <div id="othel_resultado4" style="margin: 3px;">
+                    -
+                </div>
+            </td>
+        </tr>
+    </table>
+<!-- 1) 0.57
+2) 0.88
+3) 0.92
+4) 0.95
+5) 0.98
+6) 1.01
+7) 1.38
+8) 1.41
+9) 1.44
+10) 1.47
+11) 1.5
+12) 1.53
+13) 1.96
+runa regen vida Aeore -->
+
+    <script src="test.js"></script>
+</body>
+</html>

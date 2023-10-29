@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>L2jLormor</title>
+</head>
+<body>
+    <div class="div_l2jlormor">
+        <a href="../index.html"><h2 class="l2jlormor" style="font-size: 50px;">L2jLormor</h2></a>
+    </div>
+
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="elemento.html">Elemento</a></li>
+                    <li><a href="7s1.html">Seven signs p1</a></li>
+                    <li><a href="7s2.html">Seven signs p2</a></li>
+                    <li><a href="olys.html">Olys</a></li>
+                    <li><a href="sa.html">SA</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="tw.html">Territory War</a></li>
+                    <li><a href="zoraklab.html">Laboratorio de Zorak</a></li>
+                    <li><a href="dragonvalley.html">Dragon Valley</a></li>
+                    <li><a href="baylor.html">Baylor</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="lukypig.html">Lucky Pig</a></li>
+                    <li><a href="masterwork.html">Masterwork</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="enchant.html">Enchant</a></li>
+                    <li><a href="classic.html">Classic</a></li>
+                    <li><a href="serveractual.html" style="color: red;">Server Actual</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div class="div_titulo">
+            <h1>Runas</h1>
+        </div>
+        <div class="cabecera_clasic">
+        </div>
+        <div class="div_texto">
+            <p>Las runas son un aditamento que reemplaza el SA en classic, hay 8 runas con 13 niveles cada una. Para upgradear una runa a nivel 2, requerimos dos de nivel 1, si falla, la runa se queda el mismo nivel. Mientras más alto el nivel de la runa, menos chance tiene de subir.
+                Para subirlas tendremos que seleccionar el botón Compound en el inventario.
+            </p>    
+        </div>
+        <div  style="display: flex; flex-direction: column; align-items: center;">
+            <<img src="../img/clasic/compoud_inventory.png" alt="compoud_inventory">
+            <img src="../img/clasic/compound_ventana.png" alt="compound_ventana">
+        </div>
+        <div class="div_texto">
+            <p>Además de las runas comunes, tenemos unas Super runes, cuando nuestra runa es nivel 8 o superior podemos cambiarla por una súper runa del mismo tipo y nivel en el blacksmith, por un costo de 24.900.000 adenas y 8 Gemstones A. 
+                El cambio de runas también cambiará el tipo de estadísticas que otorgan. <br>
+                Estas super runas tienen un efecto superior a las runas comunes, para comparar, una super runa 11 será más fuerte que una runa común 13.
+                <br><br><br>
+            </p>    
+        </div>
+
+
+        <table border="1" style="text-align: center; width: 80%; margin: 0 auto;" >
+            <tr class="columna_backgroudn">
+                <th> Rune name </th>
+                <th>Common effects ( lvl 1 - lvl 13 )</th>
+                <th>Super effects ( lvl 8 - lvl 13 )</th>
+            </tr>
+            <!-- Othel -->
+            <tr>
+                <td>
+                    <div id="img_othel">
+                        <img src="../img/clasic/othel_/othel_lv1.png" alt="othel 1">
+                    </div>
+                    Othell's Rune
+                    <select id="seleccion_othel" onchange="othel_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td >
+                    <div id="othel_resultado" style="margin: 3px;">
+                        75 P.Critical rate
+                    </div>
+                    <hr>
+                    <div id="othel_resultado2" style="margin: 3px;">
+                        80 P.Critical rate
+                    </div>
+                </td>
+                <td >
+                    <div id="othel_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="othel_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Aeore -->
+            <tr>
+                <td class="columna_backgroudn2">
+                    <div id="img_aeore">
+                        <img src="../img/clasic/aeore_/aeore_lv1.png" alt="aeore 1">
+                    </div>
+                    Aeore's Rune 
+                    <select id="seleccion_aeore" onchange="aeore_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="aeore_resultado" style="margin: 3px;">
+                        HP Recovery bonus +0.57
+                    </div>
+                    <hr>
+                    <div id="aeore_resultado2" style="margin: 3px;">
+                        Healing Power +15.1
+                    </div>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="aeore_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="aeore_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Feoh -->
+            <tr>
+                <td>
+                    <div id="img_feoh">
+                        <img src="../img/clasic/feoh_/feoh_lv1.png" alt="feoh 1">
+                    </div>
+                    Feoh's Rune
+                    <select id="seleccion_feoh" onchange="feoh_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td >
+                    <div id="feoh_resultado" style="margin: 3px;">
+                        M. Atk. +15.97, MP Consumption +15%
+                    </div>
+                    <hr>
+                    <div id="feoh_resultado2" style="margin: 3px;">
+                        M. Atk. +20
+                    </div>
+                </td>
+                <td >
+                    <div id="feoh_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="feoh_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Iss -->
+            <tr>
+                <td class="columna_backgroudn2">
+                    <div id="img_iss">
+                        <img src="../img/clasic/iss_/iss_lv1.png" alt="iss 1">
+                    </div>
+                    Iss's Rune 
+                    <select id="seleccion_iss" onchange="iss_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="iss_resultado" style="margin: 3px;">
+                        MP Recovery bonus +12%
+                    </div>
+                    <hr>
+                    <div id="iss_resultado2" style="margin: 3px;">
+                        Max MP +3.89
+                    </div>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="iss_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="iss_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Sigel -->
+            <tr>
+                <td>
+                    <div id="img_sigel">
+                        <img src="../img/clasic/sigel_/sigel_lv1.png" alt="sigel 1">
+                    </div>
+                    Sigel's Rune
+                    <select id="seleccion_sigel" onchange="sigel_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td >
+                    <div id="sigel_resultado" style="margin: 3px;">
+                        P. Def. +20.2
+                    </div>
+                    <hr>
+                    <div id="sigel_resultado2" style="margin: 3px;">
+                        Max HP +73
+                    </div>
+                </td>
+                <td >
+                    <div id="sigel_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="sigel_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Tyrr -->
+            <tr>
+                <td class="columna_backgroudn2">
+                    <div id="img_tyrr">
+                        <img src="../img/clasic/tyrr_/tyrr_lv1.png" alt="tyrr 1">
+                    </div>
+                    Tyrr's Rune 
+                    <select id="seleccion_tyrr" onchange="tyrr_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="tyrr_resultado" style="margin: 3px;">
+                        P. Atk. +2.8
+                    </div>
+                    <hr>
+                    <div id="tyrr_resultado2" style="margin: 3px;">
+                        Atk. Spd. +2%
+                    </div>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="tyrr_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="tyrr_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Wynn -->
+            <tr>
+                <td>
+                    <div id="img_wynn">
+                        <img src="../img/clasic/wynn_/wynn_lv1.png" alt="wynnl 1">
+                    </div>
+                    Wynn's Rune
+                    <select id="seleccion_wynn" onchange="wynn_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td >
+                    <div id="wynn_resultado" style="margin: 3px;">
+                        Casting Spd. +2.665%
+                    </div>
+                    <hr>
+                    <div id="wynn_resultado2" style="margin: 3px;">
+                        Weight limit +1000
+                    </div>
+                </td>
+                <td >
+                    <div id="wynn_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="wynn_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Yul -->
+            <tr>
+                <td class="columna_backgroudn2">
+                    <div id="img_yul">
+                        <img src="../img/clasic/yul_/yul_lv1.png" alt="yul 1">
+                    </div>
+                    Yul's Rune 
+                    <select id="seleccion_yul" onchange="yul_rune()">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+    
+                        
+                    </select>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="yul_resultado" style="margin: 3px;">
+                        Speed +4
+                    </div>
+                    <hr>
+                    <div id="yul_resultado2" style="margin: 3px;">
+                        Accuracy +2.47
+                    </div>
+                </td>
+                <td class="columna_backgroudn2">
+                    <div id="yul_resultado3" style="margin: 3px;">
+                        -
+                    </div>
+                    <hr>
+                    <div id="yul_resultado4" style="margin: 3px;">
+                        -
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+        </table>
+
+
+        </table>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+
+
+
+
+    <script src="../js/clasic.js"></script>
+</body>
+</html>
