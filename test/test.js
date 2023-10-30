@@ -1,61 +1,54 @@
-function othell_rune() {
-            // Obtén el elemento select
-            let seleccion_othel = document.getElementById("seleccion_othel");
-            
-            // Obtén la opción seleccionada
-            let opcionSeleccionada = seleccion_othel.options[seleccion_othel.selectedIndex];
-            let numero = parseInt(opcionSeleccionada.value);
+function cerrar_todo(){
 
-            
-            if (numero >= 1 && numero <= 13) {
-                
-                let wtfNCsoft;
+    let elemento1 = document.getElementById("div1");
+    elemento1.style.height = "0px"
 
-                if(numero == 11){
-                    wtfNCsoft = 1;
-                }else{
-                    wtfNCsoft = 0;
-                }
-                
-                // cuenta
-                let resultado = 75 + (numero - 1) * 25;
-                let resultado2 = (80 + (numero - 1) * 17) + wtfNCsoft;
+    let elemento2 = document.getElementById("div2");
+    elemento2.style.height = "0px"
 
-                
-                // Muestra el resultado en la página
-                let resultadoElement = document.getElementById("othel_resultado");
-                resultadoElement.textContent = "+" + resultado + " P.Critical Rate";
+    let elemento3 = document.getElementById("div3");
+    elemento3.style.height = "0px"
 
-                let resultadoElement2 = document.getElementById("othel_resultado2");
-                resultadoElement2.textContent =  "+" + resultado2 + " P.Critical Damage";
-            
-            if(numero >= 8 && numero <= 13){
+}
 
-                let wtfNCsoft2;
 
-                if (numero == 11 || numero == 12){
-                    wtfNCsoft2 = 1;
-                }else if(numero == 13){
-                    wtfNCsoft2 = 2;
-                }
-                else{
-                    wtfNCsoft2 = 0;
-                }
-                let resultado3 = (269 + (numero - 8) * 28 )- wtfNCsoft2;
-                let resultado4 = (22 + (numero - 8) * 3);
+function mostrar_elemento_1(){
 
-                // Muestra el resultado en la página
-                let resultadoElement = document.getElementById("othel_resultado3");
-                resultadoElement.textContent = "+" +  resultado3 + " P.Critical Rate";
+    cerrar_todo();
 
-                let resultadoElement2 = document.getElementById("othel_resultado4");
-                resultadoElement2.textContent = "+" +  resultado4 + "% Blow.Rate";
-            }else{
-                let resultadoElement = document.getElementById("othel_resultado3");
-                resultadoElement.textContent =  "-";
+    let mostrar_elemento_1 = document.getElementById("div1");
+    mostrar_elemento_1.style.height = "200px";
 
-                let resultadoElement2 = document.getElementById("othel_resultado4");
-                resultadoElement2.textContent = "-";
-            }
-            }
-        }
+}
+function mostrar_elemento_2(){
+
+    cerrar_todo();
+
+    let mostrar_elemento_2 = document.getElementById("div2");
+    mostrar_elemento_2.style.height = "200px";
+
+}
+function mostrar_elemento_3(){
+
+    cerrar_todo();
+
+    let mostrar_elemento_3 = document.getElementById("div3");
+    mostrar_elemento_3.style.height = "200px";
+
+}
+
+
+
+
+
+let boton_cancel = document.getElementById("cancel");
+    boton_cancel.addEventListener("click" , mostrar_elemento_1);
+
+let boton_disarm = document.getElementById("disarm");
+boton_disarm.addEventListener("click" , mostrar_elemento_2);
+
+let boton_heavy = document.getElementById("heavy");
+boton_heavy.addEventListener("click" , mostrar_elemento_3);
+
+
+

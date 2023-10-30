@@ -57,6 +57,18 @@ a{
 }
 
 /* etc */
+.transition_imagenes{
+    transition: 0.5s;
+    animation: expandFromTop 0.5s;
+}
+@keyframes expandFromTop {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
 footer{
     height: 200px;
 }
@@ -192,6 +204,15 @@ footer{
     justify-content: flex-start; 
     align-items: center;
 }
+/* masterowrk */
+/* #table1 , #table2 , #table3 , #table4 , #table5 , #table6{
+
+
+
+} */
+
+
+
 /* /////////////////Elemento /////////////////// */
 
 .columna_backgroudn{
@@ -253,7 +274,7 @@ footer{
 .tooltip-box{
     position: absolute;
     background: black;
-    line-height: auto;
+
     width: fit-content;
     z-index: 500;
     text-align: center;
@@ -293,9 +314,7 @@ table{
     padding: 20px 0 20px 0;
     gap: 10px;
 }
-#armas_vesper li a{
-    transition: 0.5;
-}
+
 #armas_vesper li{
     list-style-type: none;
     display: inline-block;
