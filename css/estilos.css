@@ -325,6 +325,7 @@ text-decoration: none;
     height: 10px;
     background-color: #353535;
     border-radius: 50%;
+    border: 1px solid black;
 }
 #puntito1{
     background-color: #8a8787;
@@ -443,7 +444,14 @@ text-decoration: none;
     margin-top: 60px;
 }
 
-
+.img_slider{
+    width: 60%;
+}
+.div_imagen_uno_slider{
+    width: 100vw;
+    padding-left: 100px;
+    
+}
 
 
 /* /////////////////Elemento /////////////////// */
@@ -619,12 +627,15 @@ table{
 
 
 
-@media (max-width: 1300px){
-    .div_cajas{
-        margin-top: 40%;
+@media (max-width: 870px){
+    .img_slider{
+        width: 100%;
+        padding-left: 0px;
     }
-
-    
+    .div_imagen_uno_slider{
+        width: 100vw;
+        padding-left: 0px;
+    }
 }
 @media (max-width: 1600px){
 
