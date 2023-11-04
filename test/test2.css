@@ -1,0 +1,19 @@
+.slider--inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    align-items: center;
+}
+/* .slider--inner img{
+    aspect-ratio: 16/1;
+    object-fit: cover;
+} */
+.div_slider{
+    width: 100%;
+    height: 80%;
+}
+
+.slider{
+    overflow:hidden;
+}

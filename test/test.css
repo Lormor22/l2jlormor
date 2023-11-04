@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: "AdelonBold";
+    src: url(../font/AdelonBold.ttf);
+}
+@font-face {
+    font-family: "AdelonRegular";
+    src: url(../font/AdelonRegular.ttf);
+}
+    
+body{
+    font-family: "AdelonRegular";
+    height: 100vh;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to bottom, transparent, #000 100%), url('back.jpg');
+
+}
+nav{
+    margin:auto;
+    /* background-color: #333; */
+    background-color: rgba(33, 33, 33, 0.9);
+    font-size: 20px;
+    padding-left: 50px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.play_now{
+    background-image: linear-gradient(0deg, #89640b, #e0ac32);
+    padding: 10px 20px 10px 20px;
+    
+
+}
+.play_now > h2{
+    height: fit-content;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,.5);
+    font-weight: bold;
+    font-family: "AdelonBold";
+    
+}
+.play_now > h2 > a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu_horizontal{
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+}
+.menu_horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu_vertical > li > a{
+
+text-decoration: none;
+} 
+.menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+.menu_vertical li:hover{
+    background-color: black;
+}
+
+.menu_horizontal li:hover{
+    background-color: black;
+}
+
+
+.menu_vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+
+}

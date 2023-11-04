@@ -46,10 +46,3 @@ function createCustomContent() {
 let botoncrear = document.getElementById("zorakbeza");
     botoncrear.addEventListener("click" , cabeza_zorak);
 
-
-
-
-
-
-
-    

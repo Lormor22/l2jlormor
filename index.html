@@ -7,59 +7,121 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>L2jLormor</title>
 </head>
-<body>
-    <div class="div_l2jlormor">
-        <a href="./index.html"><h2 class="l2jlormor">L2jLormor</h2></a>
-    </div>
-    
-    <header>
-        <nav>
-            <div>
-                <ul>
-                    <li><a href="pages/elemento.html">Elemento</a></li>
-                    <li><a href="pages/7s1.html">Seven signs p1</a></li>
-                    <li><a href="pages/7s2.html">Seven signs p2</a></li>
-                    <li><a href="pages/olys.html">Olys</a></li>
-                    <li><a href="pages/sa.html">SA</a></li>
-                    <li><a href="pages/tips.html">Tips</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="pages/tw.html">Territory War</a></li>
-                    <li><a href="pages/zoraklab.html">Laboratorio de Zorak</a></li>
-                    <li><a href="pages/dragonvalley.html">Dragon Valley</a></li>
-                    <li><a href="pages/baylor.html">Baylor</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="pages/lukypig.html">Lucky Pig</a></li>
-                    <li><a href="pages/masterwork.html">Masterwork</a></li>
-                    <li><a href="pages/recipes.html">Recipes</a></li>
-                    <li><a href="pages/enchant.html">Enchant</a></li>
-                    <li><a href="pages/classic.html">Clasic</a></li>
-                    <li><a href="pages/serveractual.html" style="color: red;">Server Actual</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="hola">
-        <div class="bienvenido">
-            <p>Bienvenido a las guias de L2 de Lormor</p>
-            <p>Diseñadas para todo tipo de entendimiento y dedicada a los bobos de mi clan.</p>
+<body >
+    <div id="imagen_blur">
+        <div class="div_l2jlormor">
+            <a href="./index.html"><h2 class="l2jlormor">L2jLormor</h2></a>
         </div>
         
-
+        <header>
+            <nav>
+                <ul class="menu_horizontal">
+                    <li><a href="#">Quest</a>
+                        <ul  class="menu_vertical">
+                            <li><a href="./pages/7s1.html">Seven Signs P1</a></li>
+                            <li><a href="./pages/7s2.html">Seven Signs P2</a></li>
+                            <li><a href="./pages/tw.html">Territory War</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Armas/Armaduras</a> 
+                        <ul  class="menu_vertical">
+                            <li><a href="./pages/elemento.html">Elemento</a></li>
+                            <li><a href="./pages/enchant.html">Enchant</a></li>
+                            <li><a href="./pages/masterwork.html">Masterwork</a></li>
+                            <li><a href="./pages/sa.html">SA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Guias</a> 
+                        <ul  class="menu_vertical">
+                            <li><a href="./pages/baylor.html">Baylor</a></li>
+                            <li><a href="./pages/recipes.html">Recipes</a></li>
+                            <li><a href="./pages/luckypig.html">Lucky Pig</a></li>
+                            <li><a href="./pages/dragonvalley.html">Dragon Valley</a></li>
+                            <li><a href="./pages/olys.html">Olys</a></li>
+                            <li><a href="./pages/classic.html">Classic</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="#">ETC</a>
+                        <ul  class="menu_vertical">
+                            <li><a href="./pages/zoraklab.html">Zorak's lab</a></li>
+                            <li><a href="./pages/tips.html">Tips</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="play_now">
+                    <h2><a href="./pages/serveractual.html">Server Actual</a></h2>             
+                </div>
+            </nav>
+        </header>
         
+        <div class="tres_puntitos">
+            <div id="puntito1"></div>
+            <div id="puntito2"></div>
+            <div id="puntito3"></div>
+        </div>
+        <div class="slider">
+            <div class="slider--inner" style="z-index: 1;">        
+                <div>
+                    <div style="width: 100vw; padding-left: 100px;">
+                        <a target="_blank" href="https://undergames.net/lindvior/">
+                            <img width="60%" src="./img/index/1c.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div style="width: 100vw;">
+                        <a href="./pages/olys.html">
+                            <img width="60%" src="./img/index/2c.png" alt="">
+                        </a> 
+                    </div>
+                <div>
+                    <div style="width: 100vw; ">
+                        <a target="_blank" href="https://discord.com/invite/U7vu5hd3K5">
+                            <img width="60%" src="./img/index/3c.png" alt="">
+                        </a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <main id="main_index">
+        <div class="div_cajas">
+            <a class="caja1" href="./pages/baylor.html">
+                    <div class="div_para_hover">
+                        <h2>Baylor</h2>
+                        <p>En cualquier momento... <br>
+                        Guia baylor para saber que hacer we</p>
+                    </div>
+            </a> 
+            <a class="caja2" href="./pages/elemento.html">
+                    <div class="div_para_hover">
+                        <h2>Elemento</h2>
+                        <p>Descubre cómo poner elemento
+                        en tus armaduras, potenciar tu <br>
+                        personaje al 100%.</p>
+                    </div>
+            </a>
+            <a class="caja3" href="./pages/7s1.html">
+                <div class="div_para_hover">
+                    <h2>Guia Quest Seven Signs Parte1</h2>
+                    <p>Inicia esta quest para ganar una
+                        cantidad de experiencia astronómica,<br>
+                        además  de un forgoten lv81.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+            
 
 
 
 
 
 
-        
+            
 
     </main>
 
@@ -73,6 +135,6 @@
 
 
 
-
+    <script src="./js/index.js"></script>
 </body>
 </html>

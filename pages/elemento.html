@@ -6,55 +6,64 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <title>L2jLormor</title>
 </head>
-<body>
+<body id="body_tw">
     <div class="div_l2jlormor">
         <a href="../index.html"><h2 class="l2jlormor" style="font-size: 50px;">L2jLormor</h2></a>
     </div>
     
-    <header>
+    <header id="inicio_pagina">
         <nav>
-            <div>
-                <ul>
-                    <li><a href="elemento.html">Elemento</a></li>
-                    <li><a href="7s1.html">Seven signs p1</a></li>
-                    <li><a href="7s2.html">Seven signs p2</a></li>
-                    <li><a href="olys.html">Olys</a></li>
-                    <li><a href="sa.html">SA</a></li>
-                    <li><a href="tips.html">Tips</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="tw.html">Territory War</a></li>
-                    <li><a href="zoraklab.html">Laboratorio de Zorak</a></li>
-                    <li><a href="dragonvalley.html">Dragon Valley</a></li>
-                    <li><a href="baylor.html">Baylor</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="lukypig.html">Lucky Pig</a></li>
-                    <li><a href="masterwork.html">Masterwork</a></li>
-                    <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="enchant.html">Enchant</a></li>
-                    <li><a href="classic.html">Classic</a></li>
-                    <li><a href="serveractual.html" style="color: red;">Server Actual</a></li>
-                </ul>
+            <ul class="menu_horizontal">
+                <li><a href="#">Quest</a>
+                    <ul  class="menu_vertical">
+                        <li><a href="./7s1.html">Seven Signs P1</a></li>
+                        <li><a href="./7s2.html">Seven Signs P2</a></li>
+                        <li><a href="./tw.html">Territory War</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Armas/Armaduras</a> 
+                    <ul  class="menu_vertical">
+                        <li><a href="./elemento.html">Elemento</a></li>
+                        <li><a href="./enchant.html">Enchant</a></li>
+                        <li><a href="./masterwork.html">Masterwork</a></li>
+                        <li><a href="./sa.html">SA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Guias</a> 
+                    <ul  class="menu_vertical">
+                        <li><a href="./baylor.html">Baylor</a></li>
+                        <li><a href="./recipes.html">Recipes</a></li>
+                        <li><a href="./luckypig.html">Lucky Pig</a></li>
+                        <li><a href="./dragonvalley.html">Dragon Valley</a></li>
+                        <li><a href="./olys.html">Olys</a></li>
+                        <li><a href="./classic.html">Classic</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">ETC</a>
+                    <ul  class="menu_vertical">
+                        <li><a href="./zoraklab.html">Zorak's lab</a></li>
+                        <li><a href="./tips.html">Tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="play_now">
+                <h2><a href="./serveractual.html">Server Actual</a></h2>             
             </div>
         </nav>
     </header>
-
-    <main>
-        <div class="div_titulo">
-            <h1>Elemento</h1>
-        </div>
+    <div class="div_titulo">
+        <h1>Elemento</h1>
+    </div>
+    <main id="main_test">
+        
         <hr>
         <div class="div_texto">
             <div class="div_img_centrada">
-                <img src="../img/elemento/elementos 2.png" alt="Cristales y piedras de elemento">
+                <img class="imagen_sin_tocar" src="../img/elemento/elementos 2.png" alt="Cristales y piedras de elemento">
             </div>
             <br><br>
-        <h2>¿Qué es el elemento? <img src="../img/elemento/elemento_stone.png" alt=""></h2><br><br>
+        <h2>¿Qué es el elemento? <img class="imagen_sin_tocar"  src="../img/elemento/elemento_stone.png" alt=""></h2><br><br>
         <p>A partir de Hellbound, se implementa una nueva metodología para incrementar el daño
             y la defensa de nuestros personajes, tanto en PVP como en PVE, esto se logra colocando  
             piedras de elemento en las armas o armaduras.
@@ -66,14 +75,14 @@
             <p><span class="color_violeta">Dark</span> / <span class="color_gris">Holy</span></p>
         </div> <br><br>
         <h3>¿Qué elemento puedo agregarle a mi arma o armadura?</h3> <br>
-        <p>Hay dos tipos de piedras de elemento, las stones <img src="../img/elemento/elemento_stone.png" alt="piedra fire"> que se consiguen mayormente por drop de npc y los crystals <img src="../img/elemento/elemento_crystal.png" alt="wind crystal"> que se consiguen de dos maneras, en gracia, activando el evento de seed of destruction o anihilation, de los cuales se pueden recolectar fragmentos y por medio de un recipe armar los crystales (Se creará la guía en un futuro), y la otra menera, en HighFive se agrega la opción en los npc de rune (Yang) y aden (Yin) de intercambiar 5 piedras comunes + adena por un crystal. En estos mismos npc se pueden intercambiar las piedras comunes por su contrario elemento sin costo alguno.</p>
+        <p>Hay dos tipos de piedras de elemento, las stones <img class="imagen_sin_tocar"  src="../img/elemento/elemento_stone.png" alt="piedra fire"> que se consiguen mayormente por drop de npc y los crystals <img  class="imagen_sin_tocar" src="../img/elemento/elemento_crystal.png" alt="wind crystal"> que se consiguen de dos maneras, en gracia, activando el evento de seed of destruction o anihilation, de los cuales se pueden recolectar fragmentos y por medio de un recipe armar los crystales (Se creará la guía en un futuro), y la otra menera, en HighFive se agrega la opción en los npc de rune (Yang) y aden (Yin) de intercambiar 5 piedras comunes + adena por un crystal. En estos mismos npc se pueden intercambiar las piedras comunes por su contrario elemento sin costo alguno.</p>
         <img src="../img/elemento/cambiar_elemento.png" alt="Cambio de elemento 5 piedras + adena por cristal"> <br><br><br>
         <h2>Armas</h2> <br>
         <p>El elemento que se le puede agregar a las armas es uno solo, el cual afecta a las
             habilidades (con el mismo tipo de elemento) y a los autoataques. Colocando una piedra <span class="color_rojo">fire</span> se incrementará el elemento del arma en 25 puntos en daño de <span class="color_rojo">fuego</span>, las siguientes que agregues, irán incrementando de a 5 puntos por cada piedra agregada, hasta 150. Después  de eso tendremos que agregar cristales de elemento, los cuales seguirán subiendo de a 5 puntos hasta un máximo de 300. 
         </p><br>
         <div class="div_img_centrada">
-            <img src="../img/armas_armaduras/armas/img_arco_ica.png" alt="Arco icarus 180 elemento holy">
+            <img  class="imagen_sin_tocar" src="../img/armas_armaduras/armas/img_arco_ica.png" alt="Arco icarus 180 elemento holy">
         </div><br>
         <h2>Armaduras</h2><br>
         <p>El sistema de armaduras es completamente distinto al de las armas, uno agrega un elemento de un grupo y le da el contrario al mismo, un ejemplo seria que agregamos una piedra <span class="color_gris">Holy</span> a nuestra parte de armadura y nos dará 6 de resistencia <span class="color_violeta">Dark</span>.</p>
@@ -81,7 +90,7 @@
         <h3><u>HighFive </u></h3><br>
         <p>En H5 se nos permite tener tres elementos por parte de armadura, limitándose a un solo elemento por grupo, esto quiere decir que si agregamos elemento <span class="color_rojo">fire</span> para defender <span class="color_azul">Water</span>, no podremos agregarle piedras <span class="color_azul">Water</span> para defender <span class="color_rojo">fire</span>, se limita a uno solo de cada grupo.</p><br>
         <div class="div_img_centrada">
-            <img src="../img/armas_armaduras/armaduras/img_guante_vesper.png" alt="Guantes vesper 120x3">
+            <img  class="imagen_sin_tocar" src="../img/armas_armaduras/armaduras/img_guante_vesper.png" alt="Guantes vesper 120x3">
         </div><br><br>
         <h3><u>Gracia</u></h3><br>
         <p>En gracia se nos limita a un solo elemento por parte de armadura, esto quiere decir que si agregamos <span class="color_verde">Earth</span> nos dará resistencia <span class="color_celeste">Wind</span> y no se podrá agregar otro elemento.</p><br>
@@ -89,9 +98,9 @@
         <p>Dependiendo del grado del arma (s, s80, s84) las piedras tienen distinta chance de entrar.</p>
         <table border="1" >
             <tr class="columna_backgroudn">
-                <th> Grado <img src="../img/elemento/grado.png" alt="grado S, s80, s84"></th>
-                <th> Piedra/stone <img src="../img/elemento/elemento_stone.png" alt="piedra fire"></th>
-                <th> Crystal <img src="../img/elemento/elemento_crystal.png" alt="wind crystal"></th>
+                <th> Grado <img class="imagen_sin_tocar"  src="../img/elemento/grado.png" alt="grado S, s80, s84"></th>
+                <th> Piedra/stone <img  class="imagen_sin_tocar" src="../img/elemento/elemento_stone.png" alt="piedra fire"></th>
+                <th> Crystal <img  class="imagen_sin_tocar" src="../img/elemento/elemento_crystal.png" alt="wind crystal"></th>
             </tr>
             <tr>
                 <td class="columna_backgroudn">S</td>
@@ -297,7 +306,7 @@
         <h3>¿Cómo se a que elemento son débiles  los NPC?</h3><br>
         <p>La mayoría  de los npc tienen su ataque destacado en la barra de pasivas del mismo, en esos casos, son débiles al elemento contrario, en el siguiente ejemplo se ve que el npc tiene ataque fuerte de <span class="color_rojo">fire</span>, eso significa que es débil  a <span class="color_azul">water</span>, igual es recomendable buscar las resistencias y ataques de los npc en bases de datos u otras páginas.</p>
         <p>Hay casos específicos  como los undead, que aunque no lo diga, son débiles  a <span class="color_gris">Holy</span>.</p><br>
-        <img src="../img/elemento/ataque_fire.png" alt="drako guardian barra de pasivas"><br><br>
+        <img  class="imagen_sin_tocar" src="../img/elemento/ataque_fire.png" alt="drako guardian barra de pasivas"><br><br>
         <hr style=" margin: 0 20% 0 20%;"><br>
         <h3>¿Si tengo un arma con 300 de <span class="color_rojo">Fire</span> y el buff holy weapon al mismo tiempo, con cual pego?</h3><br>
         <p>Si estas pegando con un skill, pegaría  con el elemento del skill (si es que coinciden), si es por autoataques, pega con el que más tengas, en este caso <span class="color_rojo">Fire</span>.</p><br>
